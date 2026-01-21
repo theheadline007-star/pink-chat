@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pink Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<!-- CLIENT LOGIN -->
+<div id="loginBox" class="box">
+  <h2>Enter Your Name</h2>
+  <input id="name" placeholder="Your name" />
+  <button onclick="clientLogin()">Start Chat</button>
+</div>
+
+<!-- CHAT BOX -->
+<div id="chatBox" class="hidden">
+  <div class="header" id="clientHeader">Chat</div>
+
+  <div class="options">
+    <button onclick="showContact()">Voice Call</button>
+    <button onclick="showContact()">Video Call</button>
+  </div>
+
+  <div id="messages" class="messages"></div>
+
+  <div class="inputBox">
+    <input id="msg" placeholder="Type a message">
+    <button onclick="sendMsg()">Send</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="app.js"></script>
+</body>
+</html>
