@@ -1,7 +1,7 @@
 
 // 🔑 SUPABASE CONFIG (later fill)
-const supabaseUrl = "";
-const supabaseKey = "";
+const supabaseUrl = "https://oxpmzsabnpdkwtsazgzk.supabase.co";
+const supabaseKey = "sb_publishable_h0_-0CyBrbdOzfcqIKIdQw_hTI0ApHX";
 const supabase = supabase.createClient(supabaseUrl, supabaseKey);
 
 // 🔹 URL PARAMS
